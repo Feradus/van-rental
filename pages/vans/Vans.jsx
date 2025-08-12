@@ -65,19 +65,19 @@ export default function Vans() {
 
 			<div className="space-x-5 mb-10">
 				<button
-					className={`px-3 py-2 rounded-md ${typeFilter === "simple" ? "bg-[#FFEAD0]" : ""}`}
+					className={`cursor-pointer px-3 py-2 rounded-md ${typeFilter === "simple" ? "bg-[#FFEAD0]" : ""}`}
 					onClick={() => handleFilterChange("type", "simple")}
 				>
 					Simple
 				</button>
 				<button
-					className={`px-3 py-2 rounded-md ${typeFilter === "luxury" ? "bg-[#FFEAD0]" : ""}`}
+					className={`cursor-pointer px-3 py-2 rounded-md ${typeFilter === "luxury" ? "bg-[#FFEAD0]" : ""}`}
 					onClick={() => handleFilterChange("type", "luxury")}
 				>
 					Luxury
 				</button>
 				<button
-					className={`px-3 py-2 rounded-md ${typeFilter === "rugged" ? "bg-[#FFEAD0]" : ""}`}
+					className={`cursor-pointer px-3 py-2 rounded-md ${typeFilter === "rugged" ? "bg-[#FFEAD0]" : ""}`}
 					onClick={() => handleFilterChange("type", "rugged")}
 				>
 					Rugged
