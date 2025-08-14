@@ -1,19 +1,18 @@
-import { useState, useEffect } from "react"
-import { useSearchParams, Link } from "react-router-dom"
-import "../../server"
+import { useState } from "react"
+import { useSearchParams, Link, useLoaderData } from "react-router-dom"
 import clsx from "clsx"
+import "../../server"
+import { getVans } from "../../api"
+
+export function loader() {
+	return getVans()
+}
 
 export default function Vans() {
-	const [vans, setVans] = useState([])
 	const [searchParams, setSearchParams] = useSearchParams()
+	const vans = useLoaderData()
 
 	const typeFilter = searchParams.get("type")
-
-	useEffect(() => {
-		fetch("/api/vans")
-			.then((req) => req.json())
-			.then((data) => setVans(data.vans))
-	}, [])
 
 	const displayedVans = typeFilter ? vans.filter((van) => van.type === typeFilter) : vans
 
