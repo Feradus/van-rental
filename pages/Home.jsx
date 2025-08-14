@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 export default function Home() {
 	return (
-		<div className="bg-[url(../assets/images/home-hero.png)] flex h-95 flex-col justify-evenly bg-cover bg-no-repeat
+		<div className="bg-[url(/assets/images/home-hero.png)] flex h-95 flex-col justify-evenly bg-cover bg-no-repeat
 			px-10">
 			<h1 className="text-4xl font-extrabold text-white">You got the travel plans, we got the travel vans.</h1>
 			<p className="leading-6 font-medium text-white">

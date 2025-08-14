@@ -35,7 +35,7 @@ export default function Header() {
 					Vans
 				</NavLink>
 				<Link to="login" className="pr-5 py-1.5 hover:underline">
-					<img src="../assets/images/avatar-icon.png" className="size-3" />
+					<img src="/assets/images/avatar-icon.png" className="size-3" />
 				</Link>
 			</nav>
 		</header>
